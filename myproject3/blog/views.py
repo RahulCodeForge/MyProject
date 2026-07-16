@@ -11,3 +11,7 @@ def post_details(request,post_id):
 def user_profile(request,username):
 
     return HttpResponse(f"<h1>Profile of User: {username}</h1>")
+
+def  article_by_year(request,year):
+
+    return HttpResponse(f"<h1> Article from the year: {year}</h1>")    
