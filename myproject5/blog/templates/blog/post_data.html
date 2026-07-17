@@ -24,6 +24,28 @@
                         <p> Skill:{{skill.3}}</p>
 
 
+             {% comment %} Acess throgh obj Attribute          {% endcomment %}
+
+             <p> User Name:{{user.name}}</p>
+             <p> User Age:{{user.age}}</p>
+
+             {% comment %} Acess Dict {% endcomment %}
+<h2>Blog Information</h2>
+
+<p>Blog Title: {{blog.title}}</p>
+{% comment %} <p>Blog content: {{blog.content}}</p> {% endcomment %}
+<p>Date_Time: {{blog.created_at}}</p>
+
+
+{% comment %} safe keyword are used to make browser safe and it remove hmtl tag {% endcomment %}
+
+<p>Blog content: {{blog.content | safe}}</p> 
+
+<p> Default Empty Value: {{empty_value|default:"With Data"}} </p>
+<p> Default Empty Value: {{empty_value|default_if_none:"NO Data"}} </p>
+  {% comment %} Nested varible uses {% endcomment %}
+<p>Blog auther: {{blog.auther.name}}</p>
+
 
   </body>
 </html>

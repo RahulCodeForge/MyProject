@@ -20,11 +20,15 @@ def Home(request):
         'user': User('Kumar','30'),
         'blog':{
             'title' : 'Django project intro',
+
+            'auther':{
+                'name':'Ankit Kumar'
+            },
             'content': '<b> This is bold</b>',
-            'created_ at':datetime(2026,7,18,12,3),
+            'created_at':datetime(2026,7,18,12,3),
         },
 
-        'empty_value': None,
+        'empty_value': "",
     }
 
     return render(request,'blog/post_data.html',context)
