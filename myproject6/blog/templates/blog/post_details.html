@@ -10,7 +10,9 @@
 <body>
     <h1> the Djnago  Project   </h1>
 
-    <p> </p>
+{% comment %} filter title {% endcomment %}
 
+    <p><h5> Title (Normal): {{post.title}}</h5> </p>
+<p><h5> UperCase {{post.title| upper}}</h5> </p>
 </body>
 </html>
